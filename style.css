@@ -1,0 +1,43 @@
+.navbar{
+    background-color: #acce8f;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+}
+.parent {
+    height: 0px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-end;
+    }
+   
+
+#container{
+    min-height: 100%;
+}
+
+#main{
+    overflow: auto;
+    padding-bottom: 0px;
+}
+
+#footer{
+    background-color: #acce8f;
+    position: relative;
+    height: 80px;
+    margin-top: -70px;
+    clear:both
+}
+.d-flex{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
