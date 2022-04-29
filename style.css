@@ -6,17 +6,24 @@
     padding: 0;
 }
 html, body{
-    height: 100%;
+    height: 75%;
 }
 .parent {
-    height: 0px;
-    
-    display: flex;
+    /* height: 0px; */
+    display: inline-flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     }
-   
+.child {
+    
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+
+}
 
 #container{
     min-height: 100%;
@@ -32,12 +39,144 @@ html, body{
     position: relative;
     height: 80px;
     margin-top: -70px;
-    clear:both
+    clear:both;
 }
 .d-flex{
-    
-    display: flex;
+     display: flex;
     align-items: center;
     justify-content: center;
    
 }
+.btn-md{
+    background-color: #acce8f;
+    font-family: 'Tourney','cursive';
+    border: #c9c;
+    border-style: double;
+    
+}
+.btn-md:hover{
+    background-color: #c9c;
+    border: #acce8f;
+    border-style: double;
+    border-width: 5px;
+
+}
+
+.btn-lg{
+    background-color: #acce8f;
+    font-family: 'Tourney','cursive';
+    border: #c9c;
+    border-style: double;
+    
+}
+.btn-lg:hover{
+    background-color: #c9c;
+    border: #acce8f;
+    border-style: double;
+    border-width: 5px;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+
+  
+  .container img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+  }
+  
+  .container .btn-md {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #acce8f;
+    color: black;
+    font-size: 20px;
+    padding: 12px 24px;
+    border: none;
+    border-style: double;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Tourney', 'cursive';
+  };
+  
+  .container .btn:hover {
+    background-color: #c9c;
+    
+  }
+
+  a{
+      font-family: 'Faster One', 'cursive';
+      font-size: 25px;
+  }
+  .ul{
+      font-family: 'Tourney', 'cursive';
+  }
+
+  h1{
+    font-family: 'Tourney', 'cursive';
+      text-align: center;
+  }
+
+  p{
+      font-family: 'Tourney', 'cursive';
+      font-size: 20px;
+      text-align: center;
+      float: right;
+  }
+
+  span{
+    font-family: 'Tourney', 'cursive';
+    float: inline-start;
+    font-size: 19px;
+  }
+
+  article{
+    font-family: 'Tourney', 'cursive';
+    float: inline-start;
+    font-size: 19px;
+  }
+
+  
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid ; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical ;
+    font-family: 'Tourney', 'cursive';
+  }
+  
+  input[type=submit] {
+    background-color: #acce8f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Tourney', 'cursive';
+  }
+  
+  input[type=submit]:hover {
+    background-color: black;
+  }
+  
+  
+  .form-container {
+    border-radius: 5px;
+    background-color: #c9c;
+    padding: 20px;
+  }
