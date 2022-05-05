@@ -6,7 +6,8 @@
     padding: 0;
 }
 html, body{
-    height: 75%;
+    height: 5%;
+    background-color: #E4E1D8;
 }
 .parent {
     /* height: 0px; */
@@ -16,17 +17,14 @@ html, body{
     justify-content: center;
     /* justify-content: flex-end; */
     }
-.child {
-    
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* justify-content: flex-end; */
 
-}
 
 #container{
-    min-height: 100%;
+    /* min-height: 100%; */
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: #acce8f;
 }
 
 #main{
@@ -34,13 +32,8 @@ html, body{
     padding-bottom: 0px;
 }
 
-#footer{
-    background-color: #acce8f;
-    position: relative;
-    height: 80px;
-    margin-top: -70px;
-    clear:both;
-}
+
+
 .d-flex{
      display: flex;
     align-items: center;
@@ -76,12 +69,47 @@ html, body{
     border-width: 5px;
 }
 
-.container {
+.container1 {
     position: relative;
     width: 50%;
+    float: left;
+  }
+
+ 
+  
+.container2 {
+    position: relative;
+    width: 50%;
+    float: right;
+    
   }
   
+.container3 {
+    position: relative;
+    width: 50%;
+    float: left;
+  }
+  
+.container4 {
+    position: relative;
+    width: 100%;
+    object-fit: 100%;
+  }
+  .container5 {
+    position: relative;
+  width: 100%;
+    float: right;
+  }
+ .container6{
+  width: 100%;
+  position: relative;
+  /* float: right; */
 
+ }
+#superPet{
+  width: 1000px;
+  height: 750px;
+}
   
   .container img {
     width: 100%;
@@ -93,7 +121,7 @@ html, body{
     
   }
   
-  .container .btn-md {
+  .container .btn-lg {
     position: relative;
     top: 40%;
     left: 50%;
@@ -103,16 +131,17 @@ html, body{
     color: black;
     font-size: 20px;
     padding: 12px 24px;
-    border: none;
     border-style: double;
     cursor: pointer;
-    border-radius: 5px;
+    border-color: #c9c;
     font-family: 'Tourney', 'cursive';
   };
   
-  .container .btn:hover {
+  .container .btn-lg:hover{
     background-color: #c9c;
-    
+    border: #acce8f;
+    border-style: double;
+    border-width: 10px;
   }
 
   a{
@@ -131,8 +160,9 @@ html, body{
   p{
       font-family: 'Tourney', 'cursive';
       font-size: 20px;
-      text-align: center;
-      float: right;
+      text-align:start;
+      line-height: 50px;
+      border: 5px;
   }
 
   span{
@@ -147,36 +177,107 @@ html, body{
     font-size: 19px;
   }
 
+  h3{
+    font-family: 'Tourney', 'cursive';
+      text-align: center;
+  }
+h5{
+  font-family: 'Tourney', 'cursive';
+  font-size: 18px;
+}
+h2{
+  font-family: 'Tourney', 'cursive';
+  font-size: 25px;
+  font-weight: 50;
+}
+  #map {
+    height: 400px;
+    width: 100%;
   
+  }
+
+ 
 input[type=text], select, textarea {
-    width: 100%; 
-    padding: 12px; 
-    border: 1px solid ; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical ;
-    font-family: 'Tourney', 'cursive';
-  }
+  width: 100%;
+  padding: 12px; 
+  border: 5px solid #acce8f; 
+  border-radius: 25px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px;
+  resize: vertical ;
+  font-family: 'Tourney', 'cursive';
+
+}
+
+input[type=text], select, label{
+  font-family: 'Tourney', 'cursive';
+}
+
+input[type=submit] {
+  background-color: #acce8f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Tourney', 'cursive';
+}
+
+
+input[type=submit]:hover {
+  background-color: #c9c;
+}
+
+
+.containerx {
+  border-radius: 5px;
+  padding: 10px;
+
+}
+
+  #market{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.card{
+  cursor: pointer;
+  display: flex;
+  background-color: #c9c;
+  flex-direction: grid;
+  min-width: 200px;
+  max-width: 300px;
+  text-align: center;
+  max-height: 150px;
+  border-radius: 1rem;
+  margin: 1.5rem;
+  transition: 0.3s;
+ 
+}
+.card:hover{
+  transform: scale(1.1);
   
-  input[type=submit] {
-    background-color: #acce8f;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: 'Tourney', 'cursive';
-  }
+}
+.cardText *{
+  text-align: center;
+  margin: 0.5rem;
+   
+}
+
+.priceText{
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.descriptionText{
+  font-size: small;
+}
+
+
+@media (max-width: 991px){
   
-  input[type=submit]:hover {
-    background-color: black;
-  }
-  
-  
-  .form-container {
-    border-radius: 5px;
-    background-color: #c9c;
-    padding: 20px;
-  }
+}
