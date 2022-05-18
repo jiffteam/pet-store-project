@@ -42,12 +42,28 @@ let item4= ['./assets/Throg vert.jpg',
 '⭐⭐⭐⭐⭐',
 'Throg brings your team all the power of Thor the god of thunder in a pint sized package.'
 ]
+let item5= ['./assets/Throg vert.jpg',
+'throg vert',
+'Throg',
+'⭐⭐⭐⭐⭐',
+'Throg brings your team all the power of Thor the god of thunder in a pint sized package.'
+]
+let item6= ['./assets/Throg vert.jpg',
+'throg vert',
+'Throg',
+'⭐⭐⭐⭐⭐',
+'Throg brings your team all the power of Thor the god of thunder in a pint sized package.'
+]
 
 createCard(item1);
 createCard(item2);
 createCard(item3);
 createCard(item4);
+createCard(item5);
+createCard(item6);
 createCard(item1);
+createCard(item5);
 createCard(item2);
 createCard(item3);
+createCard(item6);
 createCard(item4);
